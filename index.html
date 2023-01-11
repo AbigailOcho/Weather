@@ -4,11 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"
+    ></script>
+
+    <title>City Temperature</title>
   </head>
   <body>
-    <h1>hello</h1>
-    <script src="script.js"></script>
+    <div id="app-wrap">
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Type a city"
+        />
+      </header>
+      <main>
+        <section class="location">
+          <div class="city"></div>
+        </section>
+        <div class="current">
+          <div class="temp"></div>
+          <div class="innerText"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="src/javascipt.js"></script>
   </body>
 </html>
