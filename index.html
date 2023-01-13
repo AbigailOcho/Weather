@@ -11,7 +11,8 @@
       src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"
     ></script>
 
-    <title>City Temperature</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app-wrap">
@@ -22,23 +23,22 @@
           class="search-box"
           placeholder="Type a city"
         />
-        <button>
-          <a href="https://github.com/AbigailOcho/Weather/">
-            Click for GitHub
-          </a>
-        </button>
       </header>
       <main>
         <section class="location">
           <div class="city"></div>
+          <div class="date"></div>
         </section>
         <div class="current">
           <div class="temp"></div>
+          <div class="hi-low"></div>
           <div class="innerText"></div>
         </div>
       </main>
     </div>
-
+    <a href="https://github.com/AbigailOcho/Weather/"
+      >Click here for GitHub code</a
+    >
     <script src="script.js"></script>
   </body>
 </html>
