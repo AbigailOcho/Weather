@@ -1,104 +1,70 @@
- {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "montserrat", sans-serif;
-  background-image: url("https://e0.pxfuel.com/wallpapers/436/235/desktop-wallpaper-minimalist-background-simple-minimalist-nature.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #2b2b2b;
 }
 
-.app-wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  );
+h1 {
+  font-size: 38px;
 }
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 15px 15px;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background: #6cf;
-}
-header input {
-  width: 100%;
-  max-width: 280px;
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 15px 15px 15px 15px;
-  border-bottom: 3px solid gray;
-
-  color: #313131;
+h2 {
   font-size: 20px;
-  font-weight: 300;
-  transition: 0.2s ease-out;
+  color: #e97d3a;
+  font-family: monospace;
 }
-
-header input:focus {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-main {
-  flex: 1 1 100%;
-  padding: 25px 25px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+p {
   text-align: center;
 }
 
-.location .city {
-  color: rgb(161, 72, 155);
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 0px;
-  font-family: "montserrat", sans-serif;
+.weather-app-wrapper {
+  margin: 30px auto;
+  max-width: 55%;
+  line-height: 1.5;
+  display: block;
 }
 
-.location .date {
-  color: rgb(154, 69, 148);
-  font-size: 16px;
-  font-weight: bold;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
+.weather-app {
+  border: 1px solid #e97d3a;
+  border-radius: 20px;
+  background-image: url(https://images.unsplash.com/photo-1530037327011-979a1109a5dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  margin: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #ac5b29;
+  box-shadow: 7px 5px 5px -2px rgba(0, 0, 0, 0.23);
 }
 
-.current .temp {
-  color: #fff;
-  font-size: 102px;
-  font-weight: 900;
-  margin: 5px 0px;
-  text-shadow: 2px 5px rgba(0, 0, 0, 0.6);
+.today-weather-img {
+  float: left;
+  position: relative;
+  height: 100px;
+  width: 100px;
 }
 
-.current .weather {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 700;
-  font-style: italic;
-  margin-bottom: 15px;
-  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+.today-weather-temp {
+  font-size: 64px;
 }
 
-.current .hi-low {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+#search-form {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.box {
+  padding: 25px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.inactive {
+  text-decoration: none;
 }
